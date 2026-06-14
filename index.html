@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant els Coberts</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu-principal">
+        <a href="#nosaltres">Nosaltres</a>
+        <a href="#carta">Carta</a>
+        <a href="#galeria">Galeria</a>
+    </nav>
+
+    <a href="#reserva" class="boto-fix">Reservar</a>
+
+    <header class="capcalera">
+        <img src="galeria3.png" alt="Interior del restaurant" class="img-capcalera">
+        <div class="text-capcalera">
+            <h1>Restaurant <strong>els Coberts</strong></h1>
+            <p>Una experiència gastronòmica única que combina tradició i avantguarda al cor de la ciutat.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="nosaltres" class="seccio-nosaltres">
+            <h2>Sobre nosaltres</h2>
+            <div class="contenidor-nosaltres">
+                <div class="bloc-nosaltres">
+                    <img src="equip_cuinant.png" alt="Equip cuinant" class="img-arrodonida">
+                    <p>Benvinguts a "els Coberts", un espai on la passió per la cuina es respira en cada plat. Des dels nostres inicis, ens hem dedicat a recuperar les receptes tradicionals de la nostra terra i donar-los un toc modern i atrevit. El nostre equip de xefs treballa diàriament amb productes frescos, de proximitat i de temporada per garantir la màxima qualitat en tot el que fem. Som una família apassionada per la gastronomia que vol compartir amb tu moments inoblidables al voltant d'una taula.</p>
+                </div>
+                <div class="bloc-nosaltres">
+                    <p>El nostre local està dissenyat per oferir-te un ambient càlid, acollidor i elegant, ideal per a sopars romàntics, celebracions familiars o trobades de negocis. Cuidem fins a l'últim detall, des de la il·luminació fins a la selecció musical, perquè et sentis com a casa. A més, disposem d'una acurada selecció de vins de cellers locals que mariden a la perfecció amb les nostres propostes culinàries. Vine a descobrir un univers de sabors que et farà repetir.</p>
+                    <img src="detall_restaurant.png" alt="Detall del restaurant" class="img-arrodonida">
+                </div>
+            </div>
+        </section>
+
+        <section id="carta" class="seccio-carta">
+            <h2>Carta</h2>
+            <div class="graella-carta">
+                <div class="titol-menu1">Menú 1</div>
+                <div class="text-menu1">
+                    <h3>Menú Degustació</h3>
+                    <p>Descobreix el nostre menú de degustació, una selecció acurada dels plats més emblemàtics de la nostra cuina. Inclou una varietat d'entrants selectes per compartir, un plat principal a escollir entre les nostres especialitats de carn madurada o peix fresc de llotja, i unes postres artesanals elaborades diàriament pel nostre pastisser. Una opció perfecta per viure la veritable essència d'els Coberts en un sol àpat.</p>
+                </div>
+                <div class="plat plat1">
+                    <img src="plat_pasta.png" alt="Plat de pasta">
+                    <div class="overlay-text">Pasta</div>
+                </div>
+                <div class="plat plat2">
+                    <img src="entrants.png" alt="Plat d'entrants">
+                    <div class="overlay-text">Entrants</div>
+                </div>
+
+                <div class="titol-menu2">Menú 2</div>
+                <div class="text-menu2">
+                    <h3>Menú de Temporada</h3>
+                    <p>Una proposta fresca, dinàmica i equilibrada, pensada per sorprendre el teu paladar amb els ingredients de mercat que canvien cada estació. Aquest menú ofereix opcions molt acurades i saludables, començant amb una amanida tèbia o crema suau, seguit d'un plat principal energètic, i acabant amb un toc dolç, beguda inclosa. És l'opció ideal per gaudir d'una pausa gastronòmica de qualitat excepcional.</p>
+                </div>
+                <div class="plat plat3">
+                    <img src="amanida.png" alt="Amanida">
+                    <div class="overlay-text">Amanida</div>
+                </div>
+                <div class="plat plat4">
+                    <img src="peix.png" alt="Peix">
+                    <div class="overlay-text">Peix</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="seccio-galeria">
+            <h2>Galeria d'imatges</h2>
+            <div class="contenidor-galeria">
+                <div class="item-galeria"><img src="galeria1.png" alt="Gent sopant al restaurant"></div>
+                <div class="item-galeria"><img src="galeria2.png" alt="Preparació d'un plat"></div>
+                <div class="item-galeria"><img src="galeria3.png" alt="Terrassa i exterior"></div>
+                <div class="item-galeria"><img src="galeria4.png" alt="Ambient interior del local"></div>
+            </div>
+        </section>
+
+        <section id="reserva" class="seccio-reserva">
+            <h2>Reserva</h2>
+            <form action="#" class="formulari">
+                <div class="grup-form">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="grup-form">
+                    <label for="persones">Número de persones</label>
+                    <input type="number" id="persones" name="persones" min="1" max="20" required>
+                </div>
+                <div class="grup-form">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <div class="grup-form">
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+                <div class="grup-form complet">
+                    <label for="descripcio">Al·lèrgies o observacions especials</label>
+                    <textarea id="descripcio" name="descripcio" rows="4" placeholder="Indiqui aquí si algun comensal té al·lèrgies o intoleràncies alimentàries..."></textarea>
+                </div>
+                <div class="grup-form complet text-dret">
+                    <button type="submit" class="boto-form">Confirmar Reserva</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer-principal">
+        <div class="footer-logo">
+            <img src="logo.png" alt="Logotip d'els Coberts">
+            <span>Els Coberts</span>
+        </div>
+        <div class="footer-contacte">
+            <div class="contacte-item">
+                <span class="material-icons">email</span>
+                <span>reserves@elscoberts.cat</span>
+            </div>
+            <div class="contacte-item">
+                <span class="material-icons">phone</span>
+                <span>99 999 99 99</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
